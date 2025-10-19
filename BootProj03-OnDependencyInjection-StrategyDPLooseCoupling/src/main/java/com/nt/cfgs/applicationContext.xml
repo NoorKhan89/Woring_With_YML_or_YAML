@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+       
+         <!-- cgf application properties file -->
+       <context:property-placeholder location="classpath:application.properties"/>
+       
+       <!-- provise the fixed alias name for the dependence Spring bean id colleted the from apllication.properties 
+       and use that fixed bean id in the @Quilifier(-) annotation of target class  -->
+       
+       <alias name="${choose.engine}" alias="engg"/>
+ 
+</beans>
