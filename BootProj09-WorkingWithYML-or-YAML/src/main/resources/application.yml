@@ -1,0 +1,9 @@
+#tourist information
+trst:
+info:
+tid: 101
+tname: raja
+fromPlace: hyd
+toPlace: goa
+budget : 50000
+packageType: luxury
